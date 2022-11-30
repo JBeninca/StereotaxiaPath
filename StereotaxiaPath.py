@@ -248,7 +248,7 @@ class StereotaxiaPathWidget(ScriptedLoadableModuleWidget):
         self.utiles.Genera_Nodo("vtkMRMLScriptedModuleNode", "Param_data")
 
         ###
-        slicer.util.loadVolume(self.moduloPath + "/Paciente.nrrd")
+        #slicer.util.loadVolume(self.moduloPath + "/Paciente.nrrd")
         ####
         
         self.Combo1.setCurrentIndex(0)
