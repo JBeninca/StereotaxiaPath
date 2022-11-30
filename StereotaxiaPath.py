@@ -188,6 +188,11 @@ class StereotaxiaPathWidget(ScriptedLoadableModuleWidget):
                 texto = "ATENCION: No se ha elegido correctamente el Marco !!!  "
                 slicer.util.warningDisplay(texto, windowTitle="Error", parent=None, standardButtons=None)
                 self.Bton3.setStyleSheet(self.rojito) # verde
+                return    
+            if self.Combo1.currentText == "LEKSELL":
+                texto = "ATENCION: No se ha implementado LEKSELL aun !!!  "
+                slicer.util.warningDisplay(texto, windowTitle="Error", parent=None, standardButtons=None)
+                self.Bton3.setStyleSheet(self.rojito) # verde
                 return        
             self.Setup_Escena()
             slicer.app.layoutManager().setLayout(6)  # red panel
